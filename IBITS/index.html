@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73ad4c78b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="design/index_style.css">
+    <link rel="stylesheet" href="design/register_style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="wrapper">
+    <!-- nav bar -->
+    <nav class="main-nav">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </nav> 
+    <!-- top container -->
+    <section class="top-container">
+        <header class="showcase">
+            <h1> IBITS - PUPBC </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Magni, illo sunt eos iusto illum quia.</p>
+            <a href="#" class="btn"> Read More</a>
+        </header>
+        <div class="top-box top-box-a">
+            <h4> Be a Member of IBITS!</h4>
+            <p class="price"> ₱100 </p>
+            <a href="#" class="btn" id="modalBtn"> REGISTER </a>
+        </div>
+        <div class="top-box top-box-b">
+            <h4> Be a Member of IBITS!</h4>
+            <p class="price"> ₱100 </p>
+            <a href="#" class="btn"> REGISTER </a>
+        </div>
+    </section>
+
+    <!-- boxes lower section -->
+    <section class="boxes">
+        <div class="box">
+            <i class="fas fa-calendar-week fa-3x"></i>
+            <h3>Events</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-project-diagram fa-3x"></i>       
+            <h3>Projects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-cog fa-3x"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-users fa-3x"></i>
+            <h3>Support</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
+        </div>
+    </section>
+
+    <!-- information Section -->
+ <section class="info">
+     <img src="design/img/pic1.jpg" >
+    <div> <h2> ALWAYS REMEMBER! </h2> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates numquam similique accusamus a distinctio veritatis enim itaque.
+         Dolor sequi maxime voluptatibus rerum? Et cum explicabo perspiciatis sapiente porro distinctio?</p>
+         <a href="#" class="btn"> Learn More</a>
+        </div>
+ </section>
+
+<!-- portfolio section -->
+<section class="portfolio">
+    <img src="https://source.unsplash.com/random/200x200" alt="">
+    <img src="https://source.unsplash.com/random/201x200" alt="">
+    <img src="https://source.unsplash.com/random/202x200" alt="">
+    <img src="https://source.unsplash.com/random/203x200" alt="">
+    <img src="https://source.unsplash.com/random/204x200" alt="">
+    <img src="https://source.unsplash.com/random/205x200" alt="">
+    <img src="https://source.unsplash.com/random/206x200"alt="">
+    <img src="https://source.unsplash.com/random/207x200" alt="">
+    <img src="https://source.unsplash.com/random/208x200"alt="">
+    <img src="https://source.unsplash.com/random/209x200" alt="">
+</section>
+
+<!-- footer -->
+<footer>
+    <p>Sample lang to mga badi eto yung base ng website</p>
+</footer>
+
+
+
+</div>
+
+
+<!-- Code for register ui -->
+<div id="simpleModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+        <span class="closeBtn">&times;</span>
+        <h2>Create Account</h2>
+       </div>
+       <div class="modal-body">
+            <form action="#">  
+                   <div>
+                       <h5>Username:</h5>
+                       <input type="text" class="username">
+                   </div>
+                   <div>
+                       <h5>Last Name:</h5>
+                       <input type="text" class="lastname">
+                   </div>
+                   <div>
+                       <h5>First Name:</h5>
+                       <input type="text" class="firstname">
+                   </div>
+                   <div>
+                       <h5>Middle Name:</h5>
+                       <input type="text" class="middlename">
+                   </div>
+                   <div>
+                       <h5>Password:</h5>
+                       <input type="password" class="pass">
+                   </div>
+   
+                   <div>
+                       <h5>Birthday:</h5>
+                       <input type="date" id="birthday" name="birthday">
+                   </div>
+                   <div>
+                    <select class="select">
+                        <option disabled selected>COURSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ICT"></option>ICT</option>
+                    </select>
+                   </div>
+            </form>
+       </div>
+       <div class="modal-footer">
+           <button id="submit" class="btnSubmit"> SUBMIT  </button>
+           <input type="reset" value="RESET" class="reset">
+       </div>
+    </div>
+   </div>
+
+
+<script type="text/javascript"  src="script/register_modal.js"></script>
+   
+</body>
+</html>
