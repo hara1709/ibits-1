@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/73ad4c78b8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="design/index_style.css">
     <link rel="stylesheet" href="design/register_style.css">
     <title>Document</title>
@@ -15,10 +16,10 @@
     <!-- nav bar -->
     <nav class="main-nav">
         <ul>
-            <li> <a href="#">Home</a> </li>
-            <li> <a href="#">About</a> </li>
-            <li> <a href="#">Services</a> </li>
-            <li> <a href="#">Contact</a> </li>
+            <li> <a href="#"> <i class="fas fa-home fa-1x"></i> Home</a> </li>
+            <li> <a href="#"> <i class="fas fa-info-circle fa-1x"></i> About</a> </li>
+            <li> <a href="#"> <i class="fas fa-toolbox fa-1x"></i> Services</a> </li>
+            <li> <a href="#"> <i class="fas fa-address-book fa-1x"></i> Contact</a> </li>
         </ul>
     </nav> 
     <!-- top container -->
@@ -43,22 +44,22 @@
 
     <!-- boxes lower section -->
     <section class="boxes">
-        <div class="box">
+        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">  
             <i class="fas fa-calendar-week fa-3x"></i>
             <h3>Events</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
         </div>
-        <div class="box">
+        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">
             <i class="fas fa-project-diagram fa-3x"></i>       
             <h3>Projects</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
         </div>
-        <div class="box">
+        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">
             <i class="fas fa-cog fa-3x"></i>
             <h3>Development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
         </div>
-        <div class="box">
+        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">
             <i class="fas fa-users fa-3x"></i>
             <h3>Support</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
@@ -104,53 +105,50 @@
     <div class="modal-content">
         <div class="modal-header">
         <span class="closeBtn">&times;</span>
-        <h2>Create Account</h2>
+        <h2>Become a Member</h2>
        </div>
        <div class="modal-body">
-            <form action="#">  
+        <form action="#" method="POST" onsubmit="return validate();">   
                    <div>
-                       <h5>Username:</h5>
-                       <input type="text" class="username">
+                       <h5>Email:</h5>
+                       <input type="text" id="email"  placeholder="Enter Email: ">
                    </div>
                    <div>
                        <h5>Last Name:</h5>
-                       <input type="text" class="lastname">
+                       <input type="text"  id="last_name" placeholder="Enter lastname: ">
                    </div>
                    <div>
                        <h5>First Name:</h5>
-                       <input type="text" class="firstname">
+                       <input type="text" id="first_name"  placeholder="Enter firstname: ">
                    </div>
                    <div>
                        <h5>Middle Name:</h5>
-                       <input type="text" class="middlename">
+                       <input type="text"  id="middle_name" placeholder="Enter middlename: ">
                    </div>
-                   <div>
-                       <h5>Password:</h5>
-                       <input type="password" class="pass">
-                   </div>
-   
                    <div>
                        <h5>Birthday:</h5>
-                       <input type="date" id="birthday" name="birthday">
+                       <input type="date"  id="birthday" name="birthday">
                    </div>
                    <div>
-                    <select class="select">
+                    <select class="select" id="course">
                         <option disabled selected>COURSE</option>
-                        <option value="IT">IT</option>
-                        <option value="ICT"></option>ICT</option>
+                        <option value="IT">BSIT</option>
+                        <option value="ICT">DICT</option>
                     </select>
                    </div>
-            </form>
+            
        </div>
        <div class="modal-footer">
            <button id="submit" class="btnSubmit"> SUBMIT  </button>
            <input type="reset" value="RESET" class="reset">
        </div>
+
+    </form>
     </div>
    </div>
 
 
 <script type="text/javascript"  src="script/register_modal.js"></script>
-   
+<script type="text/javascript"  src="script/validation.js"></script>  
 </body>
 </html>

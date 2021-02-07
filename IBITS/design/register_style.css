@@ -1,3 +1,9 @@
+h5{
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+
 .buttonreg{
     display: block;
     width: 100%;
@@ -86,13 +92,14 @@
     color: #183153;
 }
 
-#input_text{
+input[type=text]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px auto;
     display: inline-block;
-    border: 1px solid #ffd43b;
+    border: 1px solid #183153;
     box-sizing: border-box;
+    
   }
 
 input[type=date]{
@@ -102,6 +109,7 @@ input[type=date]{
     display: inline-block;
     border: 1px solid #183153;
     box-sizing: border-box;
+    
   }
 .select{
     padding: 8px 12px;
@@ -112,13 +120,15 @@ input[type=date]{
     border-radius: 5px;
 }
 
-.select:hover{
+/* .select:hover{
     background-color: #ffd43b;
     color: #183153;
+
 }
 .select option:hover{
     background-color: #ffd43b;
-}
+    color: white;
+} */
 
 
   
