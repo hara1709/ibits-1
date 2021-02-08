@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- stream video via webcam -->
+<div class="video-wrap">
+    <video id="video" playsinline autoplay ></video>
+</div>
+
+<!-- trigger canvas web API -->
+<div class="controller">
+    <button id="snap" > capture </button>
+</div>
+<!-- webcam video snapchat -->
+<canvas id="canvas" width="640" height="480"> </canvas>
+
+<script>
+    'use strict';
+       
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const snap = document.getElementById('snap');
+    const errorMsgElement = document.getElementById('span#ErrorMsg');
+
+    const constraints = {
+        audio: true,
+        video: {
+            width: 1280, height: 720
+        }
+    };
+
+    // access webcam
+    async function init(){
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia(constraints);
+            handleSuccess(stream);
+        }
+        catch(e){
+            errorMsgElement.innerHTML = `navigator.getUserMedia.error:${e.toString()}`;
+        }
+    }
+
+    //success
+    function handleSuccess(stream){
+        window.stream = stream;
+        video.srcObject = stream;
+    }
+    //load
+    init();
+    //draw image
+    var context = canvas.getContext('2d');
+    snap.addEventListener("click",function(){
+        context.drawImage(video, 0, 0, 640, 480);
+    })
+</script>
+
+
+</body>
+</html>

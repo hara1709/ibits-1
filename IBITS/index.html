@@ -36,10 +36,8 @@
             <a href="#" class="btn" id="modalBtn"> REGISTER </a>
         </div>
         <div class="top-box top-box-b">
-            <h4> Be a Member of IBITS!</h4>
-            <p class="price"> ₱100 </p>
-            <a href="#" class="btn"> REGISTER </a>
-        </div>
+           <img src="design/img/qr.jpg" width="250rem" height="250rem">
+        </div>   
     </section>
 
     <!-- boxes lower section -->
@@ -108,7 +106,7 @@
         <h2>Become a Member</h2>
        </div>
        <div class="modal-body">
-        <form action="#" method="POST" onsubmit="return validate();">   
+        <form action="#" method="POST" ">   
                    <div>
                        <h5>Email:</h5>
                        <input type="text" id="email"  placeholder="Enter Email: ">
@@ -139,8 +137,9 @@
             
        </div>
        <div class="modal-footer">
-           <button id="submit" class="btnSubmit"> SUBMIT  </button>
+           <button id="submit" class="btnSubmit" onclick="return validate();" > SUBMIT  </button>
            <input type="reset" value="RESET" class="reset">
+           <a href="webcam.html" class="takepic"> TAKE A PHOTO </a>
        </div>
 
     </form>
