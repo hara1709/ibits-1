@@ -106,38 +106,38 @@
         <h2>Become a Member</h2>
        </div>
        <div class="modal-body">
-        <form action="#" method="POST" ">   
+        <form action="#" method="POST" >   
                    <div>
                        <h5>Email:</h5>
-                       <input type="text" id="email"  placeholder="Enter Email: ">
+                       <input type="text" id="email" name="email" placeholder="Enter Email: ">
                    </div>
                    <div>
                        <h5>Last Name:</h5>
-                       <input type="text"  id="last_name" placeholder="Enter lastname: ">
+                       <input type="text"  id="last_name"  name="lastName" placeholder="Enter lastname: ">
                    </div>
                    <div>
                        <h5>First Name:</h5>
-                       <input type="text" id="first_name"  placeholder="Enter firstname: ">
+                       <input type="text" id="first_name"   name="firstName" placeholder="Enter firstname: ">
                    </div>
                    <div>
                        <h5>Middle Name:</h5>
-                       <input type="text"  id="middle_name" placeholder="Enter middlename: ">
+                       <input type="text"  id="middle_name" name="middleName" placeholder="Enter middlename: ">
                    </div>
                    <div>
                        <h5>Birthday:</h5>
-                       <input type="date"  id="birthday" name="birthday">
+                       <input type="date"  id="birthday" name="birthday" name="birthday">
                    </div>
                    <div>
-                    <select class="select" id="course">
+                    <select class="select" id="course" name="course" >
                         <option disabled selected>COURSE</option>
-                        <option value="IT">BSIT</option>
-                        <option value="ICT">DICT</option>
+                        <option value="BSIT">BSIT</option>
+                        <option value="DICT">DICT</option>
                     </select>
                    </div>
             
        </div>
        <div class="modal-footer">
-           <button id="submit" class="btnSubmit" onclick="return validate();" > SUBMIT  </button>
+           <button id="submit" class="btnSubmit" onclick="return validate();" name="insertSub"> SUBMIT  </button>
            <input type="reset" value="RESET" class="reset">
            <a href="webcam.html" class="takepic"> TAKE A PHOTO </a>
        </div>
@@ -146,6 +146,28 @@
     </div>
    </div>
 
+   <?php
+   $DBHost = "localhost";
+   $DBUser ="root";
+   $DBPass ="";
+   $DBName="db_ibits";
+
+       $conn = mysqli_connect($DBHost,$DBUser,$DBPass,$DBName);
+       if(!$conn){
+           die("connection failed:" . mysqli_error());
+       }
+
+       if(isset($_POST['insertSub']) !='') {
+           $errZip = "";
+           // If(preg_match("/^[0-9]{4}$/",$_POST['empID'])){
+           $sql = " INSERT into tbl_register (`email`,`last_name`,`first_name`,`middle_name`,`birthday`,`course`) 
+           values ('$_POST[email]','$_POST[lastName]','$_POST[firstName]','$_POST[middleName]','$_POST[birthday]','$_POST[course]')";
+           $result = mysqli_query($conn,$sql);
+               
+               echo "<br>Recorded";
+       // }
+   }
+?>
 
 <script type="text/javascript"  src="script/register_modal.js"></script>
 <script type="text/javascript"  src="script/validation.js"></script>  
