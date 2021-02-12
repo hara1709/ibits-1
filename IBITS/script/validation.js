@@ -1,5 +1,5 @@
 function validate() {
-
+    var studID = document.getElementById('stud_ID');
     var email = document.getElementById('email');
     var lastName = document.getElementById('last_name');
     var firstName = document.getElementById('first_name');
@@ -7,7 +7,7 @@ function validate() {
     var birthday = document.getElementById('birthday');
     var course = document.getElementById('course');
 
-    if (email.value == "" || lastName.value == "" || firstName.value == "" || middleName.value == "" 
+    if (studID.value == "" || email.value == "" || lastName.value == "" || firstName.value == "" || middleName.value == "" 
          || birthday.value == "" || course.value == "COURSE"){
         
         swal ( "Oops" ,  "Please Complete Fields!" ,  "error" );
@@ -18,9 +18,5 @@ function validate() {
         return true;
     }
 
-
-
-
-
-
 }
+

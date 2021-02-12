@@ -106,7 +106,12 @@
         <h2>Become a Member</h2>
        </div>
        <div class="modal-body">
+
         <form action="#" method="POST" >   
+                    <div>
+                       <h5>Student No:</h5>
+                       <input type="text" id="stud_ID" name="stud_ID" placeholder="Enter Student No: ">
+                   </div>
                    <div>
                        <h5>Email:</h5>
                        <input type="text" id="email" name="email" placeholder="Enter Email: ">
@@ -160,16 +165,16 @@
        if(isset($_POST['insertSub']) !='') {
            $errZip = "";
            // If(preg_match("/^[0-9]{4}$/",$_POST['empID'])){
-           $sql = " INSERT into tbl_register (`email`,`last_name`,`first_name`,`middle_name`,`birthday`,`course`) 
-           values ('$_POST[email]','$_POST[lastName]','$_POST[firstName]','$_POST[middleName]','$_POST[birthday]','$_POST[course]')";
+           $sql = " INSERT into tbl_register (`stud_ID`,`email`,`last_name`,`first_name`,`middle_name`,`birthday`,`course`) 
+           values ('$_POST[stud_ID]','$_POST[email]','$_POST[lastName]','$_POST[firstName]','$_POST[middleName]','$_POST[birthday]','$_POST[course]')";
            $result = mysqli_query($conn,$sql);
                
                echo "<br>Recorded";
        // }
    }
 ?>
-
+<script type="text/javascript"  src="script/validation.js"></script> 
 <script type="text/javascript"  src="script/register_modal.js"></script>
-<script type="text/javascript"  src="script/validation.js"></script>  
+ 
 </body>
 </html>
