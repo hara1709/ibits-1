@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="design/index_style.css">
     <link rel="stylesheet" href="design/register_style.css">
-    <title>Document</title>
+    <title>IBITS WEB PAGE</title>
 </head>
 <body>
     
@@ -17,21 +17,22 @@
     <nav class="main-nav">
         <ul>
             <li> <a href="#"> <i class="fas fa-home fa-1x"></i> Home</a> </li>
-            <li> <a href="#"> <i class="fas fa-info-circle fa-1x"></i> About</a> </li>
-            <li> <a href="#"> <i class="fas fa-toolbox fa-1x"></i> Services</a> </li>
-            <li> <a href="#"> <i class="fas fa-address-book fa-1x"></i> Contact</a> </li>
+			<li> <a href="#"> <i class="fas fa-calendar fa-1x"></i> Events</a> </li>
+            <li> <a href="AboutUs.php"> <i class="fas fa-info-circle fa-1x"></i> About</a> </li>
+            <li> <a href="contact.php"> <i class="fas fa-address-book fa-1x"></i> Contact</a> </li>
+
         </ul>
     </nav> 
     <!-- top container -->
     <section class="top-container">
         <header class="showcase">
             <h1> IBITS - PUPBC </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Magni, illo sunt eos iusto illum quia.</p>
+            <p> This is the unofficial webpage of PUP iBITS. All announcements and updates will be posted here! </p>
             <a href="#" class="btn"> Read More</a>
         </header>
         <div class="top-box top-box-a">
             <h4> Be a Member of IBITS!</h4>
+
             <p class="price"> ₱100 </p>
             <a href="#" class="btn" id="modalBtn"> REGISTER </a>
         </div>
@@ -40,57 +41,39 @@
         </div>   
     </section>
 
-    <!-- boxes lower section -->
-    <section class="boxes">
-        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">  
-            <i class="fas fa-calendar-week fa-3x"></i>
-            <h3>Events</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
-        </div>
-        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">
-            <i class="fas fa-project-diagram fa-3x"></i>       
-            <h3>Projects</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
-        </div>
-        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">
-            <i class="fas fa-cog fa-3x"></i>
-            <h3>Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
-        </div>
-        <div onclick="location.href='YOUR-URL-HERE';" style="cursor: pointer;" class="box">
-            <i class="fas fa-users fa-3x"></i>
-            <h3>Support</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
-        </div>
-    </section>
-
     <!-- information Section -->
  <section class="info">
      <img src="design/img/pic1.jpg" >
-    <div> <h2> ALWAYS REMEMBER! </h2> 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates numquam similique accusamus a distinctio veritatis enim itaque.
-         Dolor sequi maxime voluptatibus rerum? Et cum explicabo perspiciatis sapiente porro distinctio?</p>
-         <a href="#" class="btn"> Learn More</a>
+
+    <div><h1> STAY HOME, SAVE LIVES. </h1>
+	<br>
+
+	<h3> Practice frequent handwashing </h3>
+    <p>Remember to wash your hands as often as you can to better protect your health. </p>
+	<br>
+	<h3> Practice proper cough etiquette </h3>
+	<p>Covering coughs and sneezes and keeping hands clean can help prevent the COVID-19. </p>
+	<br>
+	<h3> If you have cough, use mask </h3>
+	<p> It’s best to change into a new mask when the one you’re wearing gets soiled after you cough or sneeze into it. </p>
+	<br>
+	<h3> Avoid handshake </h3>
+	<p> People are also abstaining from giving pecks on the cheek, hugs and high-fives as they try to minimise the the risk of contracting it and prevent it from spreading. </p>
+	<br>
+	<h3> If symptoms appear consult your doctor </h3>
+	<p> Be clear and concise when describing your symptoms. Your description helps the doctor identify the problem.</p>
+	
+	<br>
+	<br>
+         <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="btn"> Learn More</a>
         </div>
  </section>
 
-<!-- portfolio section -->
-<section class="portfolio">
-    <img src="https://source.unsplash.com/random/200x200" alt="">
-    <img src="https://source.unsplash.com/random/201x200" alt="">
-    <img src="https://source.unsplash.com/random/202x200" alt="">
-    <img src="https://source.unsplash.com/random/203x200" alt="">
-    <img src="https://source.unsplash.com/random/204x200" alt="">
-    <img src="https://source.unsplash.com/random/205x200" alt="">
-    <img src="https://source.unsplash.com/random/206x200"alt="">
-    <img src="https://source.unsplash.com/random/207x200" alt="">
-    <img src="https://source.unsplash.com/random/208x200"alt="">
-    <img src="https://source.unsplash.com/random/209x200" alt="">
-</section>
+
 
 <!-- footer -->
 <footer>
-    <p>Sample lang to mga badi eto yung base ng website</p>
+    
 </footer>
 
 
